@@ -43,8 +43,13 @@ setup(
         ],
     },
     classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Environment :: Console",
+        "Intended Audience :: Developers",
+        "Intended Audience :: System Administrators",
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
+        "Topic :: Software Development :: Documentation",
     ],
 )
