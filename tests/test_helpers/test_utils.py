@@ -35,9 +35,10 @@ def test_get_project_url_with_https(mock_command):
 
 
 def test_get_unreleased_commits():
-    commits = get_unreleased_commits("7b30db2", "8e9bac4")
-    # TODO Improve test when squash the current branch
-    assert commits.replace("\r", "").replace("\n", "") == "''"
+    commits = get_unreleased_commits("7b30db2", "7a28a58")
+    assert commits.replace("\r", "").replace("\n", "") == (
+        "'add:initial setup, readmeadd:changelog and config commands'"
+    )
 
 
 def test_get_last_tag():
