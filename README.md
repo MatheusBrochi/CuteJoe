@@ -1,7 +1,7 @@
 # CuteJoe
 > Commands to automate some release tasks.
 
-![CuteJoe](TODO img)
+![Comb](./comb.svg)
 
 ## Installation
 

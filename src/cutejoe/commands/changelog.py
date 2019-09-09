@@ -37,7 +37,6 @@ def changelog(save, config, start=None, end=None):
     config = Config(**content)
     changelog_config = config.changelog
 
-    # TODO improve me, please
     if start:
         changelog_config.start = start
     if end:
