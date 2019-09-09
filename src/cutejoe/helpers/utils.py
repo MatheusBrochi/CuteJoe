@@ -32,8 +32,13 @@ def get_last_tag():
     except Exception:
         return "v0.0.0"
 
-    tag_regex = r"(v\d+\.\d+\.\d+).*"
-    return re.match(tag_regex, tag).group(1)
+    tag_regex = r"(v\d+\.\d+(?:\.\d+)?).*"
+    tag = re.match(tag_regex, tag).group(1)
+
+    if len(tag) < 3:  # patch is optional on tags
+        tag.append(0)
+
+    return tag
 
 
 def read_text_file(file_path: str) -> list:
